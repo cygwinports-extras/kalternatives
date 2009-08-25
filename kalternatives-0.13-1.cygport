@@ -1,0 +1,9 @@
+inherit kde4
+
+DESCRIPTION="KDE control module for alternatives(8)"
+HOMEPAGE="http://www.kde-apps.org/content/show.php/Kalternatives?content=16016"
+SRC_URI="http://www.kde-apps.org/CONTENT/content-files/16016-${PN}_${PV}.tar.gz"
+PATCH_URI="0.13-getuid.patch"
+
+# all this does is specify the alternatives cache location
+CYGCMAKE_ARGS+=" -DKALTERNATIVES_DISTRO=rpm_2"

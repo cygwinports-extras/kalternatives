@@ -1,0 +1,16 @@
+Administrator does not have UID of 0.
+
+--- origsrc/kalternatives-0.13/src/kalternatives.cpp	2009-06-24 14:43:20.000000000 -0500
++++ src/kalternatives-0.13/src/kalternatives.cpp	2009-08-25 03:30:20.690382400 -0500
+@@ -49,7 +49,11 @@ Kalternatives::Kalternatives(QWidget *pa
+ {
+ 	setUseRootOnlyMessage(false);
+ 
++#ifdef __CYGWIN__
++	int user = 0;
++#else
+ 	int user = getuid();
++#endif
+ 	
+ 	if (user == 0)
+ 	{
