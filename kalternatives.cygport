@@ -1,6 +1,13 @@
 inherit kde4
 
-DESCRIPTION="KDE control module for alternatives(8)"
+NAME="kalternatives"
+VERSION=0.13
+RELEASE=1
+CATEGORY="Admin"
+SUMMARY="KDE alternatives(8) control module"
+DESCRIPTION="Kalternatives is a KDE control module to graphically manage the
+alternatives(8) system of some distributions."
+REQUIRES="alternatives"
 HOMEPAGE="http://www.kde-apps.org/content/show.php/Kalternatives?content=16016"
 SRC_URI="http://www.kde-apps.org/CONTENT/content-files/16016-${PN}_${PV}.tar.gz"
 PATCH_URI="0.13-getuid.patch"

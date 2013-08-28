@@ -1,5 +1,0 @@
-category: Admin KDE
-requires: alternatives libgcc1 libkdecore5 libQtCore4 libQtGui4 libstdc++6
-sdesc: "KDE alternatives(8) control module"
-ldesc: "Kalternatives is a KDE control module to graphically manage the
-alternatives(8) system of some distributions."
